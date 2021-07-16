@@ -1,0 +1,8 @@
+export const SET_LIST = 'SET_LIST'
+export const ADD_TASK = 'ADD_TASK'
+export const DELETE_TASK = 'DELETE_TASK'
+export const UPDATE_TASK = 'UPDATE_TASK'
+export const LOADING = 'LOADING'
+export const FILTER_TASK = 'FILTER_TASK'
+export const FILTER_NAME = 'FILTER_NAME'
+export const GET_COUNT = 'GET_COUNT'

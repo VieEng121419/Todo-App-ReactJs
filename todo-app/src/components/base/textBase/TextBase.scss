@@ -1,0 +1,107 @@
+@import "../../../styles/abstracts/mixin";
+@import "../../../styles/abstracts/variables";
+.style-h1 {
+    font-size: 50px !important  ;
+    @include respond(mobile) {
+        font-size: 36px !important ;
+    }
+}
+.style-h3 {
+    font-size: 30px !important  ;
+}
+.style-h6 {
+    line-height: 20px;
+}
+.style-p {
+    font-size: 13px;
+}
+.style-label {
+    display: block;
+    margin-bottom: 5px;
+}
+.style-task-description {
+    width: 400px;
+    font-size: 13px;
+    line-height: 35px;
+    padding-left: 8px;
+    &.active {
+        width: 100%;
+        white-space: normal;
+        @include respond(largeMobile) {
+            width: 340px;
+        }
+        @include respond(mobile) {
+            width: 240px;
+        }
+    }
+    @include respond(largeMobile) {
+        width: 300px;
+    }
+    @include respond(mobile) {
+        width: 200px;
+    }
+}
+.style-title-todos {
+    margin-bottom: 20px;
+    width: 60%;
+}
+.style-title-profile {
+    padding: 10px;
+    padding-left: 30px;
+}
+.style-form-profile {
+    flex: 0 1 100%;
+    font-size: 0.75rem;
+    padding: 20px;
+    padding-left: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #8898aa;
+}
+.style-form {
+    font-size: 15px;
+}
+.style-nav {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+.style-filter {
+    color: #3ab397;
+    font-size: 10px;
+}
+.ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.font-xs {
+    font-size: 10px;
+}
+.font-sm {
+    font-size: 13px;
+}
+.font-md {
+    font-size: 15px;
+    @include respond(mobile) {
+        font-size: 11px;
+    }
+}
+.font-lg {
+    font-size: 30px;
+}
+.font-xl {
+    font-size: 50px;
+}
+.font-text-white {
+    color: #fff;
+}
+.font-bold {
+    font-weight: bold;
+}
+.font-light {
+    font-weight: lighter;
+}
+.font-normal {
+    font-weight: normal;
+}

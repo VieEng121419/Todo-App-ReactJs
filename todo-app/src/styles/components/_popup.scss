@@ -1,0 +1,50 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixin";
+.popup__container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 8;
+}
+.popup__fill {
+    position: fixed;
+    width: 100%;
+    height: 150vh;
+    background-color: #000;
+    opacity: 0.9;
+}
+.modal-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    height: auto;
+    z-index: 2;
+    border-radius: 5px;
+    background-color: #fdfdfd;
+    padding: 10px;
+    @include respond(mobile) {
+        width: 91%;
+    }
+}
+.modal-img {
+    display: block;
+    margin: 0 auto;
+    width: 26%;
+}
+.modal-title {
+    text-align: center;
+    padding: 20px 0 40px 0;
+}
+.modal-buttons {
+    display: flex;
+    padding: 0 10%;
+    z-index: 3;
+}
+.modal-button {
+    flex-grow: 1;
+    background-color: #e75b35;
+    padding: 16px;
+    border-radius: 3px;
+}
